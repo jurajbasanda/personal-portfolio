@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'SairaCondensed';
+  src: url("./Fonts/Saira_Condensed/SairaCondensed-Regular.ttf");
+}
+@font-face {
+  font-family: 'Share';
+  src: url("./Fonts/Share/Share-Regular.ttf");
+}
+$white:rgb(226, 224, 224);
+$black:rgba(0, 0, 0, 0.932);
+$hoverColor: rgb(141, 141, 141);
+span{opacity: 0;
+    transition: all 0.5s ease;}
+span.fade{opacity: 1;}
+.content{opacity: 0;
+    animation-name: contentU;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes contentU {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{background-color: black;
+    color:$white;
+    font-family: 'Share';
+}
+.arrow{
+    position: fixed;
+    bottom: 5vh;
+    right: 15vh;
+    font-size: 2.5rem;
+  }
+//First section-------------------------
+header{max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    margin-top: 30vh;
+.head{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        }
+p{      width: 50rem;
+        font-size: 2.2rem;
+        align-self: flex-end;
+        padding-top:10vh;      
+    }
+.name{
+        justify-self: center;
+            h1{font-weight: bold;
+            font-size:5.2rem;
+            }
+            h2{font-size: 2.2rem;
+                align-self: flex-start;       
+            }
+    }   
+}
+//Skills------------------------------------
+.skills{border-top: 1px solid $white;
+    width: 100%;
+        height: 100%;
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    background-color: rgba(223, 219, 219, 0.404);
+}
+.skills-net{
+    width: 100%;
+    display: grid;
+    img{width: 60px;}
+}
+.skills-group{
+    width: 100%;
+        height: 100%;
+        display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    grid-template-rows: 1fr 1fr;
+   
+    justify-content: center;
+    align-items: center;
+  
+    img{width: 60px;}}
+
+//Portfolio------------------------------
+.portfolio,.contact{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 20vh;
+  padding: 0 2rem;
+  border-top: 1px solid $white;
+}
+  .project {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 1rem;
+    margin-bottom: 5rem;
+    h1{color: $white;
+        font-size: 3rem;
+        font-weight: bold;
+        z-index: 10;}
+    h2{color: $white;
+        font-weight: normal;
+        font-style: italic;
+        z-index: 10;}
+        a{text-decoration: none;} 
+        ul{display:none}
+        .projectInfo{display: block;
+            margin-left: 1rem;
+            font-weight: normal;
+            font-style: italic;
+            margin-top: 1rem;}
+  }
+  .small{
+      width: 70%;
+    opacity: 0.5;
+    transition: all 0.5s ease 0.2s;
+    z-index: 4;}
+.bigger{
+    width: 100%;
+    opacity: 1;
+    transition: all 0.5s ease 0.2s;
+    z-index: 4}
+  #nazov{align-self: flex-start;
+    margin-bottom: 20vh;
+font-size: 6rem;
+}
+//Contact-----------------------------------
+.contact{
+        max-width: 1200px;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        h1{font-size: 5rem;}
+        h2{font-size: 4rem;}
+        a{font-size: 3.2rem;
+            color: $white;
+            text-decoration: none;
+            :hover{color:$hoverColor;
+                    font-size: 3.1rem;}
+            }
+        i{font-size: 3rem;
+        color: $white;
+        text-decoration: none;}
+    
+#email{display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin-top: -15vh;
+        margin-bottom: 5vh;
+        a{font-size: 3.2rem;
+            color: $white;
+            text-decoration: none;
+            :hover{color:$hoverColor;
+                    font-size: 3.1rem;}
+            }
+        }
+#social{display:flex;
+        flex-direction: column;
+        align-content: flex-start;
+        }
+}
+//Phone-----------------------------------------------------------------
+@media screen and (max-width: 800px) {
+    header{margin: 0;
+            height: 80vh;
+        max-width: 1200px;}
+    .head{margin: 25vh 10vh 10vh 5vh!important;
+     
+    p{margin:0;
+        margin-left: 5vh;
+    padding: 5vh;
+        width: 60vh;
+        font-size: 1.3rem;
+        align-self: center;
+        text-align: center;}
+    .name{h1{font-size: 3.2rem;}
+        h2{font-size: 1.3rem;}}
+    }
+//Portfolio----------------------------------------
+    #nazov{margin-left: 0vh;
+    font-size: 3rem;}   
+    .project{display: block;}
+    .small{opacity: 1;
+            width: 100%;}
+//Contact------------------------------------------
+    .contact{height: 80vh;
+        padding-top: 10vh;
+        h1{font-size: 3rem;}
+        h2{font-size: 2rem;}
+        a{font-size: 1.6rem;}
+        i{font-size: 1.6rem;}
+    }
+#email{margin-top: -10vh;
+        margin-right: 0vh;}
+#social{margin-top: 2vh;
+        margin-right: 0vh;}
+  }
+  

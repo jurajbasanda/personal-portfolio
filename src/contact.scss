@@ -1,0 +1,70 @@
+$white:rgb(226, 224, 224);
+$black:rgba(0, 0, 0, 0.932);
+$hoverColor: rgb(141, 141, 141);
+span{opacity: 0;
+    transition: all 0.5s ease;}
+span.fade{opacity: 1;}
+.content{opacity: 0;
+    animation-name: contentU;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes contentU {
+    0% {opacity: 0;}
+    100%{opacity: 1;}
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+//Contact-----------------------------------
+.contact{
+        max-width: 1200px;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        h1{font-size: 5rem;}
+        h2{font-size: 4rem;}
+        a{font-size: 3.2rem;
+            color: $white;
+            text-decoration: none;
+            :hover{color:$hoverColor;
+                    font-size: 3.1rem;}
+            }
+        i{font-size: 3rem;
+        color: $white;
+        text-decoration: none;}
+    
+.email{display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin-top: -15vh;
+        margin-bottom: 5vh;
+        }
+.socialNetworks{display:flex;
+        flex-direction: column;
+        align-content: flex-start;
+        }
+.link{i{margin:5px}}
+}
+//Phone-----------------------------------------------------------------
+@media screen and (max-width: 800px) {
+//Contact------------------------------------------
+    .contact{height: 80vh;
+        padding-top: 10vh;
+        h1{font-size: 3rem;}
+        h2{font-size: 2rem;}
+        a{font-size: 1.6rem;}
+        i{font-size: 1.6rem;}
+    }
+.email{margin-top: -10vh;
+        margin-right: 0vh;}
+.socialNetworks{margin-top: 2vh;
+        margin-right: 0vh;}
+  }
+  
