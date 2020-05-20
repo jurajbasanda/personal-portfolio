@@ -6,7 +6,7 @@ const Contact = () =>{
     
 
     return(
-        <footer className="contact" id="contact" data-aos="fade-right">
+        <footer className="contact" id="contact" data-aos="fade-up">
 
                                 <h1 id="nazov">LET’S CREATE SOMETHING TOGETHER</h1>
                                 <div className="email" >

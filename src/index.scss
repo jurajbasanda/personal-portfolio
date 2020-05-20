@@ -8,7 +8,7 @@
 }
 $white:rgb(226, 224, 224);
 $black:rgba(0, 0, 0, 0.932);
-$hoverColor: rgb(141, 141, 141);
+$hoverColor: rgb(153, 144, 144);
 span{opacity: 0;
     transition: all 0.5s ease;}
 span.fade{opacity: 1;}
@@ -31,6 +31,7 @@ body{background-color: black;
     font-family: 'Share';
 }
 .arrow{
+    z-index: 1;
     position: fixed;
     bottom: 5vh;
     right: 15vh;
@@ -62,36 +63,38 @@ p{      width: 50rem;
             }
     }   
 }
-//Skills------------------------------------
-.skills{border-top: 1px solid $white;
+//Modal------------------------------------
+.dialog-class{
+    display: block; 
+    width: 100%; 
+    padding-left: 0vh;
+}
+.modalWin{
+    transition: all 0.5s ease 0.2s;
+    z-index: 2;
     width: 100%;
-        height: 100%;
-        display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
-    margin-bottom: 2vh;
-    background-color: rgba(223, 219, 219, 0.404);
+    button{
+        cursor: pointer;
+        position: absolute;
+        top:5%;
+        left: 5%;
+        color: $white;
+        background-color: black;
+        font-size: 2rem;
+        border:none;
+        width: 2rem;
+    }
 }
-.skills-net{
-    width: 100%;
-    display: grid;
-    img{width: 60px;}
-}
-.skills-group{
-    width: 100%;
-        height: 100%;
-        display: grid;
-    grid-template-columns: 1fr 1fr  1fr;
-    grid-template-rows: 1fr 1fr;
-   
-    justify-content: center;
-    align-items: center;
-  
-    img{width: 60px;}}
-
+.insight{width: 13rem;
+        margin: 2vh;
+        border:1px solid $white;}
+.iphone{width: 8rem;
+        margin:0vh;}
 //Portfolio------------------------------
 .portfolio,.contact{
     max-width: 1200px;
@@ -105,14 +108,23 @@ p{      width: 50rem;
     grid-template-columns: repeat(2, 2fr);
     grid-gap: 1rem;
     margin-bottom: 5rem;
+    .openButton{cursor: pointer;
+            width: 10vh;
+            height: 5vh;
+            background-color: rgb(22, 22, 22);
+            border: none;
+            color: $white;
+            margin-top:1vh;
+            transition: all 0.5s ease 0.2s;
+        }
     h1{color: $white;
         font-size: 3rem;
         font-weight: bold;
-        z-index: 10;}
+        z-index: 0;}
     h2{color: $white;
         font-weight: normal;
         font-style: italic;
-        z-index: 10;}
+        z-index: 0;}
         a{text-decoration: none;} 
         ul{display:none}
         .projectInfo{display: block;
@@ -120,21 +132,23 @@ p{      width: 50rem;
             font-weight: normal;
             font-style: italic;
             margin-top: 1rem;}
+            .small{
+                width: 70%;
+              opacity: 0.5;
+              transition: all 0.5s ease 0.2s;
+              z-index: 0;}
+              .small:hover{
+                width: 100%;
+                opacity: 1;
+                transition: all 0.5s ease 0.2s;
+                z-index: 0}
+          
   }
-  .small{
-      width: 70%;
-    opacity: 0.5;
-    transition: all 0.5s ease 0.2s;
-    z-index: 4;}
-.bigger{
-    width: 100%;
-    opacity: 1;
-    transition: all 0.5s ease 0.2s;
-    z-index: 4}
   #nazov{align-self: flex-start;
     margin-bottom: 20vh;
 font-size: 6rem;
 }
+
 //Contact-----------------------------------
 .contact{
         max-width: 1200px;
@@ -171,6 +185,7 @@ font-size: 6rem;
         flex-direction: column;
         align-content: flex-start;
         }
+
 }
 //Phone-----------------------------------------------------------------
 @media screen and (max-width: 800px) {
