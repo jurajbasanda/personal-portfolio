@@ -9,7 +9,7 @@ export default function NoMatch() {
             <h1>404
               Not Found for <code>{location.pathname}</code>
             </h1>
-            <Link style={{color:'white'}}><h2>Go Back</h2></Link>
+            <Link to='/' style={{color:'white'}}><h2>Go Back</h2></Link>
           </div>
         );
       }

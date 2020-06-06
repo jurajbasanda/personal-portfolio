@@ -1,0 +1,88 @@
+.skills{
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 0vh;
+  padding: 0 0rem;
+  text-align: center;
+  h1{font-size: 3rem;
+    margin-top:5vh;
+    margin-bottom:5vh;}
+}
+.skills-group{display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            justify-content: space-between;
+            align-items: center;
+            grid-gap: 1vh;
+            width: 100%;
+            background-color: #77594B;
+           
+            img{width: 100%;
+                filter:contrast(90%);
+            }
+}
+.skills-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    h2{font-size: 2rem;
+        margin-bottom: 1vh;
+    }
+    p{font-size: 1.2rem;
+        background-color: black;
+        align-self: center;
+        justify-self: center ;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        width: 90%;
+    }
+}
+//------------------------------------min-800px--------------------iPad------Desktop-----------------------------
+@media screen and (min-width:800px){
+    .skills{
+        max-width: 1300px;
+        margin: auto;
+        margin-bottom: 0vh;
+      padding: 0 3rem;
+      text-align: center;
+      h1{font-size: 4rem;
+        margin-top:5vh;
+        margin-bottom:5vh;}
+    }
+    .skills-group{display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(2,1fr);
+                justify-content: space-between;
+                align-items: center;
+                grid-gap: 7vh;
+                width: 100%;
+                background-color: #77594B;
+               
+                img{width: 100%;
+                    filter:contrast(90%);
+                }
+    }
+    .skills-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        h2{font-size: 3rem;
+            margin-bottom: 4vh;
+        }
+        p{font-size: 1.8rem;
+            background-color: black;
+            align-self: center;
+            justify-self: center ;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            width: 90%;
+        }
+    }
+    .code-text{order: 1;}
+    .code-img{order:2}
+    .design-img{order: 3;}
+    .design-text{order: 4;}
+
+}

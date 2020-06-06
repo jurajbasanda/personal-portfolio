@@ -1,5 +1,4 @@
 import React from 'react'
-import { animateScroll as scroll } from "react-scroll";
 
 import TemplateProject from './TemplateProject'
 
@@ -27,19 +26,33 @@ const projects = [
     {id:'handymax',
     name:'Handymax',
     text:'Handyman Service in London',
-    url:'https://handymax.jurajbasanda.com/',
-    tools:'Reactjs',
+    urlWeb:'https://handymax.jurajbasanda.com/',
+    urlGit:'https://github.com/jurajbasanda/handymax',
+    tools:'React, Javascript, Sass',
     iphone:handymaxiphone,
     insight:handymaxproject,
     imgAlt:'handyman serice in London',
     imgId:'imgH',
     imgSrc:handymaxN},
 
+    {id:'realestate',
+    name:'Real Estate Agency',
+    text:'Real estate agency',
+    urlWeb:'http://realestate.jurajbasanda.com',
+    urlGit:'https://github.com/jurajbasanda/realestate',
+    tools:'React, Javascript, Sass',
+    insight:realestateproject,
+    iphone:realiphone,
+    imgAlt:'real estate agency london',
+    imgId:'imgR',
+    imgSrc:realestateN},
+
     {id:'bajovita',
     name:'Bajovita',
     text:'Coffe shop / Bistro / E-shop in Slovakia',
-    url:'http://bajovitabistro.sk/',
-    tools:'Reacjst',
+    urlWeb:'http://bajovitabistro.sk/',
+    urlGit:'https://github.com/jurajbasanda/bajovita-bistro',
+    tools:'React, Javascript, Sass',
     insight:bajovitaproject,
     iphone:bajovitaiphone,
     imgAlt:'bajovita bistro coffe shop eshop in slovakia',
@@ -49,7 +62,7 @@ const projects = [
     {id:'patricia',
     name:'Patricia Bajakova',
     text:'Actor / Singer Portfolio & CV',
-    url:'http://patriciabajakova.com',
+    urlWeb:'http://patriciabajakova.com',
     tools:'HTML, CSS, Javascript',
     insight:patriciaproject,
     iphone:patriciaiphone,
@@ -60,33 +73,22 @@ const projects = [
     {id:'eshop',
     name:'Board',
     text:'Skateboard / Snowboard / Surfboard E-shop',
-    url:'https://board-eshop.netlify.app',
-    tools:' Gatsbyjs',
+    urlWeb:'https://board-eshop.netlify.app',
+    urlGit:'https://github.com/jurajbasanda/gatsby-eshop',
+    tools:' Gatsby, Javascript, Sass',
     insight:boardeshopproject,
     iphone:boardiphone,
     imgAlt:'Board skate skateboard snowboard surf eshop',
     imgId:'imgE',
     imgSrc:boardN},
 
-    {id:'realestate',
-    name:'Real Estate Agency',
-    text:'Real estate agency',
-    url:'http://realestateagent-com.stackstaging.com',
-    tools:' HTML, CSS, Javascript',
-    insight:realestateproject,
-    iphone:realiphone,
-    imgAlt:'real estate agency london',
-    imgId:'imgR',
-    imgSrc:realestateN}
+    
 ]
 
 const Portfolio = () => {
-    const scrollToTop = () => {
-        scroll.scrollToTop();
-      };
+    
 return(
     <>
-<div className='arrow' onClick={scrollToTop}><i class="fas fa-arrow-circle-up"></i></div>
  <TemplateProject projects={projects}/>
  </>
 )

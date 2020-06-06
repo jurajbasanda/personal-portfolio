@@ -1,17 +1,19 @@
 import React,{useState} from 'react';
-import { Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 import './nav.scss'
 
 const Nav = () => {
-   
+    
     const [Nav,setNav] = useState('');
     const openNav = () =>{ (Nav === '') ? setNav(' open') :  setNav('')}
+  
+
     return(
         <>
-        <nav>
-        <div className="logo"><Link to='/'>JB</Link></div>
-        <div className="burger" onClick={openNav}><i class="fas fa-bars"></i></div>
+        <nav data-aos="slide-down">
+        <div className="logo"><a href='https://jurajbasanda.com'>JB</a></div>
+        <div className="burger" onClick={openNav}><i className="fas fa-bars"></i></div>
         <ul className="nav-links">
             <li><Link activeClass="active"
             to="about"
@@ -19,6 +21,12 @@ const Nav = () => {
             smooth={true}
             offset={-70}
             duration= {500}>about</Link></li>
+            <li><Link activeClass="active"
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration= {500}>skills</Link></li>
             <li><Link activeClass="active"
             to="projects"
             spy={true}
@@ -34,6 +42,7 @@ const Nav = () => {
         </ul>
         <ul className={"nav-links900"+ Nav}>
             <li><a href="#about" onClick={openNav}>about</a></li>
+            <li><a href="#skills" onClick={openNav}>skills</a></li>
             <li><a href="#projects" onClick={openNav}>projects</a></li>
             <li><a href="#contact" onClick={openNav}>contact</a></li>
         </ul>
