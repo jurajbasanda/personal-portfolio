@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 import './templateModal.scss'
 
@@ -11,7 +11,7 @@ class ModalProject extends Component {
     const openModal = ()=> this.setState({showModal: 'bg-modal-open'});
     const closeModal= () => this.setState({showModal:'bg-modal'});
     return (
-      <>
+      <Fragment>
       <div className="project" key={this.props.id} >
       <div className="project-text" data-aos="fade">
               <button className='openButton' onClick={openModal}><h3 onClick={openModal} className="glitch" >{this.props.name} <i className="fas fa-external-link-alt"></i></h3></button>
@@ -45,7 +45,7 @@ class ModalProject extends Component {
           </div>
       </section>
     </div>
-    </>
+    </Fragment>
       
     )
   }
@@ -67,7 +67,6 @@ const Content = props.projects.map((project) =>
 
 return(
 <section className="portfolioP" id="projects">
-      
     <h1 data-aos="slide-up">Projects</h1>
     <div className='portfolio'>
     {Content}    

@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as BRouter,Switch,Route } from "react-router-dom";
+import React,{Fragment} from 'react';
+import { BrowserRouter as BRouter,Switch,Route,} from "react-router-dom";
 import AOS from 'aos';
 
 import './App.scss';
@@ -18,7 +18,7 @@ function App() {
     //scroll.scrollToTop();
   //})
   AOS.init({
-    offset: 180, // offset (in px) from the original trigger point
+    offset: 130, // offset (in px) from the original trigger point
     delay: 90, // values from 0 to 3000, with step 50ms
     duration: 1000, // values from 0 to 3000, with step 50ms
     debounceDelay: 50,
@@ -27,7 +27,7 @@ function App() {
 
   return (
 
-    <>
+    <Fragment>
     <BRouter>
       <Nav/>
         {/* A <Switch> looks through its children <Route>s and
@@ -41,7 +41,7 @@ function App() {
           </Route>
         </Switch>
     </BRouter>
-    </>
+    </Fragment>
 
 
   )
@@ -51,7 +51,7 @@ function App() {
 const Home = () => {
 
   return (
-      <>
+      <Fragment>
     <header id="about">
         <section className="head " >
             <div className="name" data-aos="slide-right">
@@ -59,7 +59,7 @@ const Home = () => {
                 <h2 className="content">FRONT-END WEB DEVELOPER</h2>
             </div>
             
-            <p className="content" data-aos="slide-left">As passionate and creative developer I’m building sleek websites with the modern technologies. 
+            <p className="content" data-aos="fade-left">As passionate and creative developer I’m building sleek websites with the modern technologies. 
                 I'm currently seeking out the right team where I can contribute in making amazing digital products.
             </p>
             
@@ -70,7 +70,7 @@ const Home = () => {
      <Portfolio/>
      <Contact/>
 
-     </>
+     </Fragment>
     
 
   )

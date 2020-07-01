@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import TemplateProject from './TemplateProject'
 
@@ -88,9 +88,9 @@ const projects = [
 const Portfolio = () => {
     
 return(
-    <>
+    <Fragment>
  <TemplateProject projects={projects}/>
- </>
+ </Fragment>
 )
 }
 export default Portfolio;
