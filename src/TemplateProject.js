@@ -30,7 +30,8 @@ class ModalProject extends Component {
           <h2>{this.props.name}</h2>
           <h3>{this.props.text}</h3>
           <br/>
-          <p>{this.props.tools}</p>
+          <p>{this.props.front}</p>
+          <p>{this.props.back}</p>
           <br/>
           <p>{this.props.description}</p>
           <div className='modalLinks'>
@@ -58,7 +59,7 @@ const TemplateProject = (props) =>{
 const Content = props.projects.map((project) => 
     
         <ModalProject key={project.id} name={project.name} text={project.text} id={project.id}
-                      tools={project.tools} description={project.description} 
+                      front={project.front} back={project.back} description={project.description} 
                       urlWeb={project.urlWeb} urlGit={project.urlGit}
                       insight={project.insight} iphone={project.iphone}
       //img

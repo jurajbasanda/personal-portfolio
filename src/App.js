@@ -30,8 +30,6 @@ function App() {
     <Fragment>
     <BRouter>
       <Nav/>
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
           <Route exact path="/">
             <Home />
@@ -59,7 +57,7 @@ const Home = () => {
                 <h2 className="content">FRONT-END WEB DEVELOPER</h2>
             </div>
             
-            <p className="content" data-aos="fade-left">As passionate and creative developer I’m building sleek websites with the modern technologies. 
+            <p className="content" data-aos="fade">As passionate and creative developer I’m building sleek websites with the modern technologies. 
                 I'm currently seeking out the right team where I can contribute in making amazing digital products.
             </p>
             
