@@ -61,6 +61,17 @@ const projects = [
     imgId:'imgBoard',
     imgSrc:boardN},
 
+    {id:'patricia',
+    name:'Patricia Bajakova',
+    text:'Actor / Singer Portfolio & CV',
+    urlWeb:'http://patriciabajakova.com',
+    front:'HTML, CSS, Javascript',
+    insight:patriciaproject,
+    iphone:patriciaiphone,
+    imgAlt:'Patricia Bajakova singer actor cv portfolio',
+    imgID:'imgP',
+    imgSrc:patriciaN},
+
     {id:'bajovita',
     name:'Bajovita',
     text:'Coffe shop / Bistro / E-shop in Slovakia',
@@ -72,17 +83,6 @@ const projects = [
     imgAlt:'bajovita bistro coffe shop eshop in slovakia',
     imgId:'imgB',
     imgSrc:bajovitaN},
-
-    {id:'patricia',
-    name:'Patricia Bajakova',
-    text:'Actor / Singer Portfolio & CV',
-    urlWeb:'http://patriciabajakova.com',
-    front:'HTML, CSS, Javascript',
-    insight:patriciaproject,
-    iphone:patriciaiphone,
-    imgAlt:'Patricia Bajakova singer actor cv portfolio',
-    imgID:'imgP',
-    imgSrc:patriciaN},
 
 ]
 
