@@ -87,7 +87,6 @@ const projects = [
 ]
 
 const Portfolio = () => {
-    
 return(
     <Fragment>
  <TemplateProject projects={projects}/>

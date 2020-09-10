@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-
 import './templateModal.scss'
 
 class ModalProject extends Component {
@@ -24,7 +23,7 @@ class ModalProject extends Component {
       <div className={this.state.showModal}>
       <section className="modal-contents" >
         <div className="close" onClick={closeModal} 
-        tabIndex="0" >+</div>
+        tabIndex="0" ><i class="fas fa-times"></i></div>
     {/*<button ><i className="fas fa-times"></i></button>*/}
           <br/>
           <h2>{this.props.name}</h2>
@@ -54,7 +53,7 @@ class ModalProject extends Component {
 
 
 const TemplateProject = (props) =>{
-
+  
 
 const Content = props.projects.map((project) => 
     
@@ -67,7 +66,7 @@ const Content = props.projects.map((project) =>
 )
 
 return(
-<section className="portfolioP" id="projects">
+<section  className="portfolioP" id="projects">
     <h1 data-aos="slide-up">Projects</h1>
     <div className='portfolio'>
     {Content}    
