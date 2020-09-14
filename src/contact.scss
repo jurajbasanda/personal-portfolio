@@ -75,4 +75,6 @@ span.fade{opacity: 1;}
 .socialNetworks{margin-top: 2vh;
         margin-right: 0vh;}
   }
-  
+  @media screen and (max-width:330px){
+      .contact{a{font-size: 1.4rem;}}
+  }

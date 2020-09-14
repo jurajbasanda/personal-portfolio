@@ -11,11 +11,11 @@ class ModalProject extends Component {
     const closeModal= () => this.setState({showModal:'bg-modal'});
     return (
       <Fragment>
-      <div className="project" key={this.props.id} >
-      <div className="project-text" data-aos="fade">
+      <div className="project" key={this.props.id} data-aos="fade-down">
+      <div className="project-text" >
               <button className='openButton' onClick={openModal}><h3 onClick={openModal} className="glitch" >{this.props.name} <i className="fas fa-external-link-alt"></i></h3></button>
             </div>
-      <div onClick={openModal} data-aos="fade-up">
+      <div onClick={openModal}>
       <img className='project-img' src={this.props.imgSrc} alt={this.props.imgAlt} />
       </div>
       </div> 
@@ -23,7 +23,7 @@ class ModalProject extends Component {
       <div className={this.state.showModal}>
       <section className="modal-contents" >
         <div className="close" onClick={closeModal} 
-        tabIndex="0" ><i class="fas fa-times"></i></div>
+        tabIndex="0" ><i className="fas fa-times"></i></div>
     {/*<button ><i className="fas fa-times"></i></button>*/}
           <br/>
           <h2>{this.props.name}</h2>

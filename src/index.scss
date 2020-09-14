@@ -129,6 +129,7 @@ p{background-color: black;
             width: 100%;
               opacity: 1;
               transition: all 0.5s ease 0.2s;
+              border:10px solid black;
               }
           
 
@@ -176,18 +177,21 @@ p{background-color: black;
 }
 //Phone-----------------------------------------max-800px --------------------------------------------------
 @media screen and (max-width: 800px) {
-    header{margin: 0;
-            height: 100%;}
-    .head{margin: 10vh 10vh 10vh 5vh!important;
+    header{margin-top: 10vh;
+            height: 100%;
      
-    p{
+    p{margin: 0;
+        justify-self: center;
+    align-self: center;
+    padding: 2vh;
         width: 40vh;
         font-size: 1.3rem;
         align-self: center;
         text-align: center;}
     .name{h1{font-size: 3.2rem;}
-        h2{font-size: 1.3rem;}}
+        h2{font-size: 1.3rem;}
     }
+}
 //Portfolio----------------------------------------
 .portfolioP{
     max-width: 1300px;
