@@ -15,7 +15,7 @@ export default function Skills() {
     <div className='skills-group'>
     <div className='skills-text code-text' >
     <h2 data-aos="fade-down">Development Tools/Languages</h2>
-    <p data-aos="fade-up">HTML5, CSS3, JavaScript, React, Gatsby, Parcel, SASS, GSAP, NPM, Github, WordPress</p>
+    <p data-aos="fade-up">HTML5, CSS3, JavaScript, React, Redux, Gatsby, Parcel, SASS, GSAP, NPM, Github, WordPress</p>
     </div>
     <img className='code-img' data-aos="fade" src={codeImg} alt="" srcSet=""/>
     <div className='skills-text design-text' >
