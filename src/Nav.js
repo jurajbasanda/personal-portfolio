@@ -13,7 +13,7 @@ const Nav = () => {
         <>
         <nav data-aos="slide-down">
         <div className="logo"><a href='https://jurajbasanda.com'>JB</a></div>
-        <div className="burger" onClick={openNav}><i className="fas fa-bars"></i></div>
+        <div tabindex="0" role="button" className="burger" onClick={openNav}><i className="fas fa-bars"></i></div>
         <ul className="nav-links">
             <li><Link activeClass="active"
             to="about"

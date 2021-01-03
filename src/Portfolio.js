@@ -5,6 +5,7 @@ import TemplateProject from './TemplateProject'
 //Images
 import bajovitaN from './image/bajovitaN.jpeg'
 import boardN from './image/skate.jpg'
+import deleteSN from './image/deleteSN.png'
 import handymaxN from './image/HandymaxN.jpeg'
 import patriciaN from './image/patriciaBajakovaN.jpeg'
 import realestateN from './image/realestateN.jpeg'
@@ -14,6 +15,7 @@ import boardeshopproject from './image/boardeshopproject.jpg'
 import handymaxproject from './image/handymaxhandymaproject.jpg'
 import bajovitaproject from './image/bajovitabistroproject.jpg'
 import realestateproject from './image/realestateproject.jpg'
+import deleteproject from './image/deleteproject.jpg'
 
 import patriciaiphone from './image/patriciaiphone.png'
 import handymaxiphone from './image/handymaxiphone.png'
@@ -23,6 +25,18 @@ import realiphone from './image/realiphone.png'
 
 
 const projects = [
+    {id:'delete',
+    name:'Delete Eshope',
+    text:'eshop',
+    urlWeb:'https://peaceful-badlands-06511.herokuapp.com/',
+    urlGit:'https://github.com/jurajbasanda/mern-eshop',
+    front:'React, Redux, Javascript, Sass',
+    back:'Node , Express, MongoDB',
+    insight:deleteproject,
+    imgAlt:'Board Skate Eshop',
+    imgId:'imgBoard',
+    imgSrc:deleteSN},
+
     {id:'board',
     name:'Board Eshope',
     text:'Skate/Snow/Surf Eshope',
