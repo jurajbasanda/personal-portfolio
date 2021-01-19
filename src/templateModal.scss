@@ -1,53 +1,60 @@
 @font-face {
-    font-family: 'SairaCondensed';
-    src: url("./Fonts/Saira_Condensed/SairaCondensed-Regular.ttf");
-  }
-  @font-face {
-    font-family: 'Share';
-    src: url("./Fonts/Share/Share-Regular.ttf");
-  }
-  $white:rgb(226, 224, 224);
-  $black:rgba(0, 0, 0, 0.932);
-  $hoverColor: rgb(153, 144, 144);
-  *{margin: 0;
-    padding: 0;
-    box-sizing: border-box;}
+	font-family: 'SairaCondensed';
+	src: url('./Fonts/Saira_Condensed/SairaCondensed-Regular.ttf');
+}
+@font-face {
+	font-family: 'Share';
+	src: url('./Fonts/Share/Share-Regular.ttf');
+}
+$white: rgb(226, 224, 224);
+$black: rgba(0, 0, 0, 0.932);
+$hoverColor: rgb(153, 144, 144);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 //Modal------------------------------------
 .bg-modal-open {
-    z-index: 4;
-    transition: all 0.5s ease 0.2s;
+	z-index: 4;
+	transition: all 0.5s ease 0.2s;
 	background-color: rgba(0, 0, 0, 0.596);
 	width: 100%;
 	height: 100%;
-    position: fixed;
-    left: 0;
+	position: fixed;
+	left: 0;
 	top: 0;
 	display: flex;
 	justify-content: center;
-    align-items: center;
-    h2{font-size: 2rem;}
-    h3{font-size: 1.5rem;}
-    p{font-size: 1.3rem;
-        font-style: italic;
-        font-weight: normal;
-        }
+	align-items: center;
+	h2 {
+		font-size: 2rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 1.3rem;
+		font-style: italic;
+		font-weight: normal;
+	}
 }
-.bg-modal {    
+.bg-modal {
 	display: none;
 }
 .modal-contents {
-    position: relative;
-    transition: all 0.5s ease 0.4s;
-    top: 5%;
-    height: 80%;
+	position: relative;
+	transition: all 0.5s ease 0.4s;
+	top: 5%;
+	height: 80%;
 	width: 80%;
 	background-color: rgba(0, 0, 0, 0.877);
 	padding: 20px;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	border-radius: 4px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .close {
 	position: absolute;
@@ -55,121 +62,136 @@
 	right: 10px;
 	font-size: 2.6rem;
 	color: rgb(175, 173, 173);
-    cursor: pointer;
-    transition: all 0.5s;
+	cursor: pointer;
+	transition: all 0.5s;
 	&:hover {
-        color: rgb(236, 236, 236);
-        transition: all 0.5s;
+		color: rgb(236, 236, 236);
+		transition: all 0.5s;
 	}
 }
-.modalLinks{
-    height: 50%;
-    display: flex;
-    flex-direction: row;
-    color:$white;
-    a{cursor: pointer;
-        display: flex;
-         flex-direction: column;
-         justify-content: center;
-         align-items: center;
-         padding:5px;
-         margin: 5px;
-         margin-bottom: 2vh;
-         color: white;
-         text-decoration: none;
-         border: 1px white solid;
-         border-radius: 10%;
-         background-color: rgba(0, 0, 0, 0.932);
-        transition: all 0.5s;
-        font-size: 1.3rem;
-        &:hover {
-            background-color: rgb(119, 117, 117);
-        }
-    i{font-size: 1.3rem;
-        color: white;}
-    }
+.modalLinks {
+	height: 50%;
+	display: flex;
+	flex-direction: row;
+	color: $white;
+	a {
+		cursor: pointer;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+		margin: 5px;
+		margin-bottom: 2vh;
+		color: white;
+		text-decoration: none;
+		border: 1px white solid;
+		border-radius: 10%;
+		background-color: rgba(0, 0, 0, 0.932);
+		transition: all 0.5s;
+		font-size: 1.3rem;
+		&:hover {
+			background-color: rgb(119, 117, 117);
+		}
+		i {
+			font-size: 1.3rem;
+			color: white;
+		}
+	}
 }
 
-.modalImg{width: 100%;
-        height: 100%;
-        display: grid;
-        grid-gap: 4vh;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 50%;
-        overflow: scroll;
-        justify-content: center;
-        align-items: flex-start;
-        }
-.insight{width: 100%;
-        margin: 2vh;
-        border:1px solid $white;}
-.iphone{width: 100%;
-        margin:0vh;}
+.modalImg {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-gap: 4vh;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 50%;
+	overflow: scroll;
+	justify-content: center;
+	align-items: flex-start;
+}
+.insight {
+	width: 100%;
+	margin: 2vh;
+	border: 1px solid $white;
+}
+.iphone {
+	width: 100%;
+	margin: 0vh;
+}
 //---------------min-800px------------iPad---------Desktop---------------------------------800px---------------------------------
-@media screen and (min-width:800px){
-    .bg-modal-open {
-        z-index: 4;
-        transition: all 0.5s ease 0.2s;
-        background-color: rgba(0, 0, 0, 0.596);
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        left: 0;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .modal-contents {
-        transition: all 0.5s ease 0.4s;
-        height: 43rem;
-        width: 50%;
-        background-color: rgba(0, 0, 0, 0.877);
-        text-align: center;
-        padding: 20px;
-        position: relative;
-        border-radius: 4px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .modalLinks{
-        height: 20%;
-        display: flex;
-        flex-direction: row;
-        color:$white;
-        background-color: none;
-        padding: 0;
-        margin: 0;
-       
+@media screen and (min-width: 800px) {
+	.bg-modal-open {
+		z-index: 4;
+		transition: all 0.5s ease 0.2s;
+		background-color: rgba(0, 0, 0, 0.596);
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.modal-contents {
+		transition: all 0.5s ease 0.4s;
+		height: 43rem;
+		width: 50%;
+		background-color: rgba(0, 0, 0, 0.877);
+		text-align: center;
+		padding: 20px;
+		position: relative;
+		border-radius: 4px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.modalLinks {
+		height: 20%;
+		display: flex;
+		flex-direction: row;
+		color: $white;
+		background-color: none;
+		padding: 0;
+		margin: 0;
 
-        .link{display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-             padding:3px;
-             margin: 2px;
-             margin-bottom: 2vh;
-             color: white;
-             text-decoration: none;
-        p{color: white;
-            font-size: 1.3rem;}
-        i{font-size: 1.2rem;
-            color: white;}
-        }
-    }
-    
-    .modalImg{
-            width: 100%;
-            height: 100%;
-            padding: 0;
-            margin: 0;}
-    .insight{width: 100%;
-            margin: 2vh;
-            border:1px solid $white;}
-    .iphone{width: 100%;
-            margin:0vh;}
+		.link {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 3px;
+			margin: 2px;
+			margin-bottom: 2vh;
+			color: white;
+			text-decoration: none;
+			p {
+				color: white;
+				font-size: 1.3rem;
+			}
+			i {
+				font-size: 1.2rem;
+				color: white;
+			}
+		}
+	}
+
+	.modalImg {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	.insight {
+		width: 100%;
+		margin: 2vh;
+		border: 1px solid $white;
+	}
+	.iphone {
+		width: 100%;
+		margin: 0vh;
+	}
 }
