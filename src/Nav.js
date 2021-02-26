@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 
-import './nav.scss'
+import './styles/nav.scss'
 
 const Nav = () => {
 	const [Nav, setNav] = useState('')

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import './templateModal.scss'
+import './styles/templateModal.scss'
 
 class ModalProject extends Component {
 	constructor(props) {

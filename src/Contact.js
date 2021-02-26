@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import { useIntersection } from 'react-use'
 import gsap from 'gsap'
-
-import './contact.scss'
+//Style
+import './styles/contact.scss'
 
 const Contact = () => {
 	const intersectionRef = useRef(null)

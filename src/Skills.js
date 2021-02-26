@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './skills.scss'
+import './styles/skills.scss'
 
 import codeImg from './image/coding-picture2.jpg'
 import designImg from './image/design-picture.jpg'
