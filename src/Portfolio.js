@@ -9,6 +9,7 @@ import deleteSN from './image/deleteSN.png'
 import handymaxN from './image/HandymaxN.jpeg'
 import patriciaN from './image/patriciaBajakovaN.jpeg'
 import realestateN from './image/realestateN.jpeg'
+import elizBayaN from './image/elizBaya-N.png'
 
 import patriciaproject from './image/patriciabajakovaproject.jpg'
 import boardeshopproject from './image/boardeshopproject.jpg'
@@ -67,6 +68,19 @@ const projects = [
 		imgId: 'imgR',
 		imgSrc: realestateN,
 	},
+	{
+		id: 'elizbaya',
+		name: 'Eliz Baya',
+		text: 'Eliz Baya music artist',
+		urlWeb: 'http://elizbaya.com',
+		urlGit: '',
+		front: 'React, PHP, Javascript, Apache, SASS,MailChimp',
+		insight: '',
+		iphone: '',
+		imgAlt: 'Eliz Baya music artist',
+		imgID: 'imgE',
+		imgSrc: elizBayaN,
+	},
 
 	{
 		id: 'handymax',
@@ -74,7 +88,7 @@ const projects = [
 		text: 'Handyman Service in London',
 		urlWeb: 'https://handymax.jurajbasanda.com/',
 		urlGit: 'https://github.com/jurajbasanda/handymax',
-		front: 'React, Javascript, Sass',
+		front: 'React, Javascript, PHP, Apache, Sass',
 		iphone: handymaxiphone,
 		insight: handymaxproject,
 		imgAlt: 'handyman serice in London',
@@ -87,7 +101,8 @@ const projects = [
 		name: 'Patricia Bajakova',
 		text: 'Actor / Singer Portfolio & CV',
 		urlWeb: 'http://patriciabajakova.com',
-		front: 'HTML, CSS, Javascript',
+		urlGit: '',
+		front: 'HTML, CSS, Javascript, PHP, Apache',
 		insight: patriciaproject,
 		iphone: patriciaiphone,
 		imgAlt: 'Patricia Bajakova singer actor cv portfolio',

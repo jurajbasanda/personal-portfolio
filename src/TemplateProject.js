@@ -9,22 +9,33 @@ class ModalProject extends Component {
 	render() {
 		const openModal = () => this.setState({ showModal: 'bg-modal-open' })
 		const closeModal = () => this.setState({ showModal: 'bg-modal' })
+		const {
+			id,
+			name,
+			imgSrc,
+			imgId,
+			imgAlt,
+			text,
+			front,
+			back,
+			urlWeb,
+			urlGit,
+			insight,
+			iphone,
+			description,
+		} = this.props
 		return (
 			<Fragment>
-				<div className='project' key={this.props.id} data-aos='fade-down'>
+				<div className='project' key={id} data-aos='fade-down'>
 					<div className='project-text'>
 						<button className='openButton' onClick={openModal}>
 							<h3 onClick={openModal} className='glitch'>
-								{this.props.name} <i className='fas fa-external-link-alt'></i>
+								{name} <i className='fas fa-external-link-alt'></i>
 							</h3>
 						</button>
 					</div>
 					<div onClick={openModal}>
-						<img
-							className='project-img'
-							src={this.props.imgSrc}
-							alt={this.props.imgAlt}
-						/>
+						<img className='project-img' src={imgSrc} alt={imgAlt} />
 					</div>
 				</div>
 
@@ -35,38 +46,39 @@ class ModalProject extends Component {
 						</div>
 						{/*<button ><i className="fas fa-times"></i></button>*/}
 						<br />
-						<h2>{this.props.name}</h2>
-						<h3>{this.props.text}</h3>
+						<h2>{name}</h2>
+						<h3>{text}</h3>
 						<br />
-						<p>{this.props.front}</p>
-						<p>{this.props.back}</p>
+						<p>{front}</p>
+						<p>{back}</p>
 						<br />
-						<p>{this.props.description}</p>
+						<p>{description}</p>
 						<div className='modalLinks'>
-							<a href={this.props.urlWeb} target='blank' className='link'>
+							<a href={urlWeb} target='blank' className='link'>
 								<i className='fas fa-link' />
 								Website
 							</a>
-							<a href={this.props.urlGit} target='blank' className='link'>
-								<i className='fab fa-github-square' />
-								GitHub
-							</a>
+							{urlGit === '' ? null : (
+								<a href={urlGit} target='blank' className='link'>
+									<i className='fab fa-github-square' />
+									GitHub
+								</a>
+							)}
 						</div>
 						<div className='modalImg'>
-							<div className='desktopImg'>
-								<img
-									className='insight'
-									src={this.props.insight}
-									alt=''
-									srcSet=''
-								/>
-							</div>
-							<img
-								className='iphone'
-								src={this.props.iphone}
-								alt=''
-								srcSet=''
-							/>
+							{insight === '' ? null : (
+								<div className='desktopImg'>
+									<img
+										className='insight'
+										src={insight}
+										alt={imgAlt}
+										srcSet=''
+									/>
+								</div>
+							)}
+							{this.props.iphone === '' ? null : (
+								<img className='iphone' src={iphone} alt={imgAlt} srcSet='' />
+							)}
 						</div>
 					</section>
 				</div>
