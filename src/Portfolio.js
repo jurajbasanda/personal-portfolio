@@ -34,6 +34,7 @@ const projects = [
 		front: 'React, Redux, Javascript, Sass',
 		back: 'Node , Express, MongoDB',
 		insight: deleteproject,
+		iphone: '',
 		imgAlt: 'Board Skate Eshop',
 		imgId: 'imgBoard',
 		imgSrc: deleteSN,
