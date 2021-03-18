@@ -13,22 +13,24 @@ const Contact = () => {
 	})
 	//Animationfading IN
 	const fadeIn = (element) => {
-		gsap.to(element, 1, {
-			opacity: 1,
-			y: -60,
-			ease: 'power4.out',
-			stragger: {
-				amount: 0.5,
-			},
-		})
+		if (document.querySelector('.fadeIn'))
+			gsap.to(element, 1, {
+				opacity: 1,
+				y: -60,
+				ease: 'power4.out',
+				stragger: {
+					amount: 0.5,
+				},
+			})
 	}
 	//Animation fading OUT
 	const fadeOut = (element) => {
-		gsap.to(element, 1, {
-			opacity: 0,
-			y: -20,
-			ease: 'power4.out',
-		})
+		if (document.querySelector('.fadeOut'))
+			gsap.to(element, 1, {
+				opacity: 0,
+				y: -20,
+				ease: 'power4.out',
+			})
 	}
 	//Checking to seewhent the view point is visible to the user
 	intersection && intersection.intersectionRatio < 1
