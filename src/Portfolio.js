@@ -7,22 +7,20 @@ import bajovitaN from './image/bajovitaN.jpeg'
 import boardN from './image/skate.jpg'
 import deleteSN from './image/deleteSN.png'
 import handymaxN from './image/HandymaxN.jpeg'
-import patriciaN from './image/patriciaBajakovaN.jpeg'
 import realestateN from './image/realestateN.jpeg'
 import elizBayaN from './image/elizBaya-N.png'
 
-import patriciaproject from './image/patriciabajakovaproject.jpg'
 import boardeshopproject from './image/boardeshopproject.jpg'
 import handymaxproject from './image/handymaxhandymaproject.jpg'
 import bajovitaproject from './image/bajovitabistroproject.jpg'
 import realestateproject from './image/realestateproject.jpg'
 import deleteproject from './image/deleteproject.jpg'
 
-import patriciaiphone from './image/patriciaiphone.png'
 import handymaxiphone from './image/handymaxiphone.png'
 import bajovitaiphone from './image/bajovitaiphone.png'
 import boardiphone from './image/boardiphone.png'
 import realiphone from './image/realiphone.png'
+import elizIphone from './image/eliz-Iphone.png'
 
 const projects = [
 	{
@@ -74,10 +72,10 @@ const projects = [
 		name: 'Eliz Baya',
 		text: 'Eliz Baya music artist',
 		urlWeb: 'http://elizbaya.com',
+		insight: elizBayaN,
+		iphone: elizIphone,
 		urlGit: '',
 		front: 'React, PHP, Javascript, Apache, SASS,MailChimp',
-		insight: '',
-		iphone: '',
 		imgAlt: 'Eliz Baya music artist',
 		imgID: 'imgE',
 		imgSrc: elizBayaN,
@@ -96,21 +94,6 @@ const projects = [
 		imgId: 'imgH',
 		imgSrc: handymaxN,
 	},
-
-	{
-		id: 'patricia',
-		name: 'Patricia Bajakova',
-		text: 'Actor / Singer Portfolio & CV',
-		urlWeb: 'http://patriciabajakova.com',
-		urlGit: '',
-		front: 'HTML, CSS, Javascript, PHP, Apache',
-		insight: patriciaproject,
-		iphone: patriciaiphone,
-		imgAlt: 'Patricia Bajakova singer actor cv portfolio',
-		imgID: 'imgP',
-		imgSrc: patriciaN,
-	},
-
 	{
 		id: 'bajovita',
 		name: 'Bajovita',
