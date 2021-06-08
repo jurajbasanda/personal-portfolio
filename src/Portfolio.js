@@ -3,24 +3,27 @@ import React, { Fragment } from 'react'
 import TemplateProject from './TemplateProject'
 
 //Images
-import bajovitaN from './image/bajovitaN.jpeg'
+import tastebookN from './image/tastebookN.jpeg'
 import boardN from './image/skate.jpg'
 import deleteSN from './image/deleteSN.png'
 import handymaxN from './image/HandymaxN.jpeg'
 import realestateN from './image/realestateN.jpeg'
 import elizBayaN from './image/elizBaya-N.png'
+import bajovitaN from './image/bajovitaN.jpeg'
 
-import boardeshopproject from './image/boardeshopproject.jpg'
-import handymaxproject from './image/handymaxhandymaproject.jpg'
-import bajovitaproject from './image/bajovitabistroproject.jpg'
-import realestateproject from './image/realestateproject.jpg'
-import deleteproject from './image/deleteproject.jpg'
+import boardeshopproject from './image/boardeshopproject.jpeg'
+import handymaxproject from './image/handymaxhandymaproject.jpeg'
+import tastebookproject from './image/tastebookproject.jpeg'
+import realestateproject from './image/realestateproject.jpeg'
+import deleteproject from './image/deleteproject.jpeg'
+import bajovitaproject from './image/bajovitabistroproject.jpeg'
 
 import handymaxiphone from './image/handymaxiphone.png'
-import bajovitaiphone from './image/bajovitaiphone.png'
+import tastebookiphone from './image/tastebookiphone.png'
 import boardiphone from './image/boardiphone.png'
 import realiphone from './image/realiphone.png'
 import elizIphone from './image/eliz-Iphone.png'
+import bajovitaiphone from './image/bajovitaiphone.png'
 
 const projects = [
 	{
@@ -29,7 +32,7 @@ const projects = [
 		text: 'eshop',
 		urlWeb: 'https://peaceful-badlands-06511.herokuapp.com/',
 		urlGit: 'https://github.com/jurajbasanda/mern-eshop',
-		front: 'React, Redux, Javascript, Sass',
+		front: 'React, Redux, Javascript, Bootstrap, CSS',
 		back: 'Node , Express, MongoDB',
 		insight: deleteproject,
 		iphone: '',
@@ -54,20 +57,6 @@ const projects = [
 	},
 
 	{
-		id: 'realestate',
-		name: 'Real Estate Agency',
-		text: 'Real estate agency',
-		urlWeb: 'http://realestate.jurajbasanda.com',
-		urlGit: 'https://github.com/jurajbasanda/realestate',
-		front: 'React, Javascript, Sass',
-		back: 'WordPress',
-		insight: realestateproject,
-		iphone: realiphone,
-		imgAlt: 'real estate agency london',
-		imgId: 'imgR',
-		imgSrc: realestateN,
-	},
-	{
 		id: 'elizbaya',
 		name: 'Eliz Baya',
 		text: 'Eliz Baya music artist',
@@ -81,6 +70,34 @@ const projects = [
 		imgSrc: elizBayaN,
 	},
 
+	{
+		id: 'tastebook',
+		name: 'Tastebook',
+		text: 'Recipe platform',
+		urlWeb: 'http://tastebook.jurajbasanda.com/',
+		urlGit: 'https://github.com/jurajbasanda/bajovita-bistro',
+		front: 'React, Redux, Javascript, CSS/SASS',
+		back: 'Node, Express, MongoDB',
+		insight: tastebookproject,
+		iphone: tastebookiphone,
+		imgAlt: 'bajovita bistro coffe shop eshop in slovakia',
+		imgId: 'imgB',
+		imgSrc: tastebookN,
+	},
+	{
+		id: 'realestate',
+		name: 'Real Estate Agency',
+		text: 'Real estate agency',
+		urlWeb: 'http://realestate.jurajbasanda.com',
+		urlGit: 'https://github.com/jurajbasanda/realestate',
+		front: 'React, Javascript, Sass',
+		back: 'WordPress',
+		insight: realestateproject,
+		iphone: realiphone,
+		imgAlt: 'real estate agency london',
+		imgId: 'imgR',
+		imgSrc: realestateN,
+	},
 	{
 		id: 'handymax',
 		name: 'Handymax',
