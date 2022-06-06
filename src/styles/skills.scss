@@ -1,3 +1,18 @@
+@font-face {
+	font-family: 'SairaCondensed';
+	src: url('../Fonts/Saira_Condensed/SairaCondensed-Regular.ttf');
+}
+@font-face {
+	font-family: 'Share';
+	src: url('../Fonts/Share/Share-Regular.ttf');
+}
+$white: rgb(226, 224, 224);
+$black: rgba(0, 0, 0, 0.932);
+$red: #5e2826;
+$blue: #4b6f77;
+$hoverColor: rgb(153, 144, 144);
+$title: 3rem;
+
 .skills {
 	max-width: 1300px;
 	margin: auto;
@@ -5,17 +20,12 @@
 	padding: 0 0rem;
 	text-align: center;
 	h1 {
-		font-size: 3rem;
+		font-size: $title;
 		margin-top: 5vh;
 		margin-bottom: 5vh;
 	}
 }
-.code-img {
-	border: 0.7rem solid black;
-}
-.design-img {
-	border: 0.7rem solid black;
-}
+
 .skills-group {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -24,7 +34,6 @@
 	align-items: center;
 	grid-gap: 1vh;
 	width: 100%;
-	background-color: #77594b;
 
 	img {
 		width: 100%;
@@ -42,7 +51,6 @@
 	}
 	p {
 		font-size: 1.2rem;
-		background-color: black;
 		align-self: center;
 		justify-self: center;
 		padding-top: 1rem;
@@ -72,7 +80,6 @@
 		align-items: center;
 		grid-gap: 7vh;
 		width: 100%;
-		background-color: #77594b;
 
 		img {
 			width: 100%;

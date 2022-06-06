@@ -1,0 +1,168 @@
+span {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+span.fade {
+  opacity: 1;
+}
+
+.content {
+  opacity: 0;
+  -webkit-animation-name: contentU;
+          animation-name: contentU;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes contentU {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contentU {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.arrow {
+  position: absolute;
+  top: 15vh;
+  right: 50vh;
+  z-index: 2;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.contact {
+  max-width: 1200px;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact h1 {
+  font-size: 5rem;
+}
+
+.contact h2 {
+  font-size: 4rem;
+}
+
+.contact a {
+  font-size: 3.2rem;
+  color: #e2e0e0;
+  text-decoration: none;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact a :hover {
+  color: #8d8d8d;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact i {
+  font-size: 3rem;
+  color: #e2e0e0;
+  text-decoration: none;
+}
+
+.contact .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-top: -15vh;
+  margin-bottom: 5vh;
+}
+
+.contact .email a:hover {
+  color: #8d8d8d;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact .socialNetworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.contact .link i {
+  margin: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    height: 100vh;
+  }
+  .contact h1 {
+    font-size: 3rem;
+  }
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .contact a {
+    font-size: 1.6rem;
+  }
+  .contact i {
+    font-size: 1.6rem;
+  }
+  .email {
+    margin-top: -10vh;
+    margin-right: 0vh;
+  }
+  .socialNetworks {
+    margin-top: 2vh;
+    margin-right: 0vh;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .contact a {
+    font-size: 1.4rem;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

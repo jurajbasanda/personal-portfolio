@@ -38,25 +38,29 @@ class ModalProject extends Component {
 						<img className='project-img' src={imgSrc} alt={imgAlt} />
 					</div>
 				</div>
-
+				{/* Popup project */}
 				<div className={this.state.showModal}>
 					<section className='modal-contents'>
-						<div className='close' onClick={closeModal} tabIndex='0'>
-							<i className='fas fa-times'></i>
+						<div className='modalImg'>
+							{insight === '' ? null : (
+								<div className='desktopImg'>
+									<img className='image-project' src={insight} alt={imgAlt} srcSet='' />
+								</div>
+							)}
 						</div>
-						{/*<button ><i className="fas fa-times"></i></button>*/}
-						<br />
-						<h2>{name}</h2>
-						<h3>{text}</h3>
-						<br />
-						<p>{front}</p>
-						<p>{back}</p>
-						<br />
-						<p>{description}</p>
+						<div className='project-description-group'>
+							<h2>{name}</h2>
+							<h3>{text}</h3>
+							<hr />
+							<p>Frontend: {front}</p>
+							<p>Backend: {back}</p>
+
+							<p>{description}</p>
+						</div>
 						<div className='modalLinks'>
 							<a href={urlWeb} target='blank' className='link'>
 								<i className='fas fa-link' />
-								Website
+								Visit website
 							</a>
 							{urlGit === '' ? null : (
 								<a href={urlGit} target='blank' className='link'>
@@ -65,20 +69,8 @@ class ModalProject extends Component {
 								</a>
 							)}
 						</div>
-						<div className='modalImg'>
-							{insight === '' ? null : (
-								<div className='desktopImg'>
-									<img
-										className='insight'
-										src={insight}
-										alt={imgAlt}
-										srcSet=''
-									/>
-								</div>
-							)}
-							{this.props.iphone === '' ? null : (
-								<img className='iphone' src={iphone} alt={imgAlt} srcSet='' />
-							)}
+						<div className='close' onClick={closeModal} tabIndex='0'>
+							Close <i className='fas fa-times'></i>
 						</div>
 					</section>
 				</div>

@@ -1,0 +1,373 @@
+@font-face {
+  font-family: 'SairaCondensed';
+  src: url("../Fonts/Saira_Condensed/SairaCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Share';
+  src: url("../Fonts/Share/Share-Regular.ttf");
+}
+
+span {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+span.fade {
+  opacity: 1;
+}
+
+.content {
+  opacity: 0;
+  -webkit-animation-name: contentU;
+          animation-name: contentU;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes contentU {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contentU {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #e2e0e0;
+  font-family: 'Share';
+}
+
+header {
+  max-width: 1200px;
+  height: 100%;
+  height: 85vh;
+  margin: auto;
+  margin-top: 15vh;
+}
+
+header .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10vh;
+}
+
+header p {
+  background-color: black;
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 2vh;
+  width: 50rem;
+  font-size: 2.2rem;
+}
+
+header .name {
+  margin-bottom: 5vh;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+header .name h1 {
+  font-weight: bold;
+  font-size: 5.2rem;
+}
+
+header .name h2 {
+  font-size: 2.2rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.portfolioP {
+  max-width: 1300px;
+  margin: auto;
+  margin-bottom: 0vh;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.portfolioP h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+}
+
+.contact {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 0vh;
+  padding: 0 3rem;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5vh;
+}
+
+.project {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.openButton {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  cursor: pointer;
+  background-color: #070707;
+  border: none;
+  -webkit-transition: all 0.1s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
+}
+
+.openButton i {
+  margin: 1vh;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #e2e0e0;
+}
+
+.openButton:hover {
+  -webkit-transition: all 0.1s ease 0.1s;
+  transition: all 0.1s ease 0.1s;
+  background-color: #3d3939;
+}
+
+.project-img {
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+  border: 10px solid black;
+}
+
+#nazov {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-bottom: 20vh;
+  font-size: 6rem;
+}
+
+.contact {
+  max-width: 1200px;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.contact h1 {
+  font-size: 5rem;
+}
+
+.contact h2 {
+  font-size: 4rem;
+}
+
+.contact a {
+  font-size: 3.2rem;
+  color: #e2e0e0;
+  text-decoration: none;
+}
+
+.contact a :hover {
+  color: #999090;
+  font-size: 3.1rem;
+}
+
+.contact i {
+  font-size: 3rem;
+  color: #e2e0e0;
+  text-decoration: none;
+}
+
+.contact #email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  margin-top: -15vh;
+  margin-bottom: 5vh;
+}
+
+.contact #email a {
+  font-size: 3.2rem;
+  color: #e2e0e0;
+  text-decoration: none;
+}
+
+.contact #email a :hover {
+  color: #999090;
+  font-size: 3.1rem;
+}
+
+.contact #social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    margin-top: 10vh;
+    height: 100%;
+  }
+  header p {
+    margin: 0;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 2vh;
+    width: 40vh;
+    font-size: 1.3rem;
+    align-self: center;
+    text-align: center;
+  }
+  header .name h1 {
+    font-size: 3.2rem;
+  }
+  header .name h2 {
+    font-size: 1.3rem;
+  }
+  .portfolioP {
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 0vh;
+    padding: 0 0rem;
+    text-align: center;
+  }
+  .portfolioP h1 {
+    font-size: 3rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  .portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2vh;
+    padding: 1vh;
+  }
+  .portfolio {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .project {
+    display: block;
+    padding: 0vh;
+  }
+  #nazov {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 20vh;
+    font-size: 3rem;
+  }
+  .contact {
+    height: 80vh;
+    padding-top: 10vh;
+  }
+  .contact h1 {
+    font-size: 3rem;
+  }
+  .contact h2 {
+    font-size: 2rem;
+  }
+  .contact a {
+    font-size: 1.6rem;
+  }
+  .contact i {
+    font-size: 1.6rem;
+  }
+  #email {
+    margin-top: -10vh;
+    margin-right: 0vh;
+  }
+  #social {
+    margin-top: 2vh;
+    margin-right: 0vh;
+  }
+}
+/*# sourceMappingURL=index.css.map */

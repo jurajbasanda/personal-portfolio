@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^7.2.1",
     "aos": "^2.3.4",
     "gsap": "^3.2.6",
-    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-animated-modal": "^1.1.1",
     "react-dom": "^16.13.1",
@@ -39,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "sass": "^1.52.2"
   }
 }

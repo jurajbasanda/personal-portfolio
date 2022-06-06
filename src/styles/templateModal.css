@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg-modal-open {
+  z-index: 4;
+  -webkit-transition: all 0.5s ease 0.2s;
+  transition: all 0.5s ease 0.2s;
+  background-color: rgba(0, 0, 0, 0.596);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.project-description-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.project-description-group h2 {
+  font-size: 2rem;
+}
+
+.project-description-group h3 {
+  font-size: 1.2rem;
+  color: darkgray;
+}
+
+.project-description-group p {
+  font-size: 1.1rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.bg-modal {
+  display: none;
+}
+
+.modal-contents {
+  position: relative;
+  -webkit-transition: all 0.5s ease 0.4s;
+  transition: all 0.5s ease 0.4s;
+  top: 15%;
+  background-color: #0a0a0a;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.close {
+  background-color: black;
+  padding: 0.2rem;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 1.6rem;
+  color: #afadad;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.close:hover {
+  color: #ececec;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.modalLinks {
+  color: #e2e0e0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #e2e0e0;
+  background-color: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.modalLinks .link {
+  padding: 3px;
+  margin-right: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: rgba(113, 112, 112, 0.386);
+}
+
+.modalLinks .link p {
+  padding: 3px;
+  color: white;
+}
+
+.modalLinks .link i {
+  padding: 3px;
+  color: white;
+}
+
+.modalLinks a {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 1.3rem;
+}
+
+.modalLinks a:hover {
+  background-color: #777575;
+}
+
+.modalLinks a i {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.modalImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.image-project {
+  width: 100%;
+}
+
+.iphone {
+  width: 100%;
+  margin: 0vh;
+}
+
+@media screen and (min-width: 800px) {
+  .bg-modal-open {
+    z-index: 4;
+    -webkit-transition: all 0.5s ease 0.2s;
+    transition: all 0.5s ease 0.2s;
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modal-contents {
+    height: 80%;
+    width: 50%;
+  }
+  .modalLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: #e2e0e0;
+    background-color: none;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .modalLinks .link {
+    padding: 3px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(113, 112, 112, 0.386);
+  }
+  .modalLinks .link p {
+    padding: 3px;
+    color: white;
+    font-size: 1.3rem;
+  }
+  .modalLinks .link i {
+    padding: 3px;
+    font-size: 1.2rem;
+    color: white;
+  }
+}
+/*# sourceMappingURL=templateModal.css.map */

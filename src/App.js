@@ -46,15 +46,15 @@ const Home = () => {
 		<Fragment>
 			<header id='about'>
 				<section className='head '>
-					<div className='name' data-aos='slide-right'>
+					<div className='name' data-aos='fade'>
 						<h1 className='color'>HEY, I'M JURAJ BASANDA</h1>
-						<h2 className='content'>FRONT-END WEB DEVELOPER</h2>
+						<h2 className='content'>FRONT-END DEVELOPER</h2>
 					</div>
 
 					<p className='content' data-aos='fade'>
-						As passionate and creative developer I’m building sleek websites
-						with the modern technologies. I'm currently seeking out the right
-						team where I can contribute in making amazing digital products.
+						As passionate and creative developer I’m building sleek websites with the
+						modern technologies. I'm currently seeking out the right team where I can
+						contribute in making amazing digital products.
 					</p>
 				</section>
 			</header>

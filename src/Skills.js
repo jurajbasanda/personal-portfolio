@@ -15,17 +15,14 @@ export default function Skills() {
 				<div className='skills-text code-text'>
 					<h2 data-aos='fade-down'>Development Tools/Languages</h2>
 					<p data-aos='fade-up'>
-						HTML5, CSS3/SASS, JavaScript, React, Redux, Gatsby, Node, MongoDB, Github,
-						WordPress
+						HTML5, CSS3, Javascript(ES6), Typescript, React.js, Next.js, React-query,
+						Redux, Node.js, Express, MongoDB, WordPress
 					</p>
 				</div>
 				<img className='code-img' data-aos='fade' src={codeImg} alt='' srcSet='' />
 				<div className='skills-text design-text'>
 					<h2 data-aos='fade-down'>Design Tools</h2>
-					<p data-aos='fade-up'>
-						{' '}
-						Sketch, Figma, Adobe Suit <br /> XD, Photoshop
-					</p>
+					<p data-aos='fade-up'> Sketch, Figma, Adobe XD</p>
 				</div>
 				<img className='design-img' data-aos='fade' src={designImg} alt='' srcSet='' />
 			</div>

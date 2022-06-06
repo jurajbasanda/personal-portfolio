@@ -45,7 +45,7 @@ const Contact = () => {
 				<h2 className='glitch' data-text='EMAIL'>
 					EMAIL
 				</h2>
-				<a href='mailto:basanda.juraj@gmail.com'>BASANDA.JURAJ@GMAIL.COM</a>
+				<a href='mailto:basanda.juraj@gmail.com.com'>basanda.juraj@gmail.com</a>
 			</div>
 			<div className='socialNetworks'>
 				<h2 className='glitch' data-text='SOCIAL NETWORKS'>
@@ -57,9 +57,6 @@ const Contact = () => {
 					</a>
 					<a href='https://www.linkedin.com/in/juraj-basanda-1b277117a/'>
 						<i className='fab fa-linkedin'></i>
-					</a>
-					<a href='http://facebook.com/jurajbasanda'>
-						<i className='fab fa-facebook-square' />
 					</a>
 				</div>
 			</div>

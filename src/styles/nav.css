@@ -1,0 +1,192 @@
+@-webkit-keyframes contentU {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes contentU {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+nav {
+  z-index: 2;
+  max-width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.863);
+  padding-left: 10vh;
+  padding-right: 10vh;
+  font-family: 'SairaCondensed';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-animation-name: contentU;
+          animation-name: contentU;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+nav a:hover {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #ccc8c8;
+  font-size: 110%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav .burger {
+  z-index: 2;
+  font-size: 1.5rem;
+}
+
+nav .nav-links900 {
+  z-index: 1;
+  width: 100%;
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.863);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: -500%;
+  right: 0%;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+nav .open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 100%;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+nav .logo {
+  width: 100%;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  z-index: 2;
+}
+
+nav .nav-links {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.863);
+    padding-left: 20vh;
+    font-family: 'SairaCondensed';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-animation-name: contentU;
+            animation-name: contentU;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  nav ul {
+    list-style: none;
+  }
+  nav .burger {
+    display: none;
+  }
+  nav .nav-links900 {
+    display: none;
+  }
+  nav .logo {
+    width: 100%;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+  nav .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=nav.css.map */
